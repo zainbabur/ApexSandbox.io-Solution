@@ -1,0 +1,14 @@
+public String changeTimeFormat(String strTime) {
+    //code here
+    if (Integer.valueOf(strTime.substringBefore(':')) > 12) {
+
+        return String.valueOf(Integer.valueOf(strTime.substringBefore(':')) - 12)+':'+strTime.substringAfter(':')+' PM';
+
+    } else {
+
+        return strTime+' AM';
+
+    }
+
+
+}
