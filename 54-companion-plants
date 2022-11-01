@@ -4,7 +4,7 @@ public Boolean companionPlants(String plant1, String plant2) {
     set<set<String>> set_of_sets_of_companion_plants = new set<set<String>>{new set<String>{'lettuce','cucumbers'},new set<String>{'lettuce','onions'},new set<String>{'onions','carrots'},new set<String>{'onions','tomatoes'}};
     list<String> list_of_plants = new list<String>{plant1, plant2};
 
-    for ( set_of_companion_plants : set_of_sets_of_companion_plants ) {
+    for ( set<String> set_of_companion_plants : set_of_sets_of_companion_plants ) {
 
         if ( set_of_companion_plants.containsAll( list_of_plants )) {
 
