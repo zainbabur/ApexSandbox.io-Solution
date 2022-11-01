@@ -5,11 +5,11 @@ public String formatName(String firstName, String lastName) {
         
         return lastName+', '+firstName;
 
-    } else if ((firstName == 'null' & firstName == '') & (lastName != 'null' & lastName != '')) {
+    } else if ((firstName == null & firstName == '') & (lastName != null & lastName != '')) {
 
         return lastName;
 
-    } else if ((firstName != 'null' & firstName != '') & (lastName == 'null' & lastName == '')) {
+    } else if ((firstName != null & firstName != '') & (lastName == null & lastName == '')) {
 
         return firstName;
 
