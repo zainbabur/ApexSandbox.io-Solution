@@ -1,0 +1,18 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    //code here
+
+    list<Boolean> passed_list = new list<Boolean>{passedExam, passedAssignments, passedProject};
+    passed_list.sort();
+
+    //true values would always be last in alphabetically sorted list
+    if ( passed_list[1] == True & passed_list[2] == True ) {
+
+        return True;
+
+    } else {
+
+        return False;
+
+    }
+
+}
