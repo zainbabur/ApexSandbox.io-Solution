@@ -1,0 +1,20 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    //code here
+    list<Integer> list_of_integers = new list<Integer>{a, b, c};
+    map<Integer, String> map_of_integers = new map<Integer, String>{a => 'a', b => 'b', c => 'c'};
+    list_of_integers.sort();
+    if ( list_of_integers[0] + list_of_integers[1] == list_of_integers[2] ) {
+
+        return map_of_integers.get(list_of_integers[2]);
+
+    } else if ( list_of_integers[0] + list_of_integers[2] == list_of_integers[1]) {
+        // to cover the case of highest number + a negative number (which would be sorted lowest) equaling the middle number
+        return map_of_integers.get(list_of_integers[1]);
+
+    } else {
+
+        return '';
+
+    }
+
+}
