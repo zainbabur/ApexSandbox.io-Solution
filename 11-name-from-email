@@ -1,5 +1,5 @@
 public String nameFromEmail(String email) {
     //code here
-
-    return (email.substringBefore('.')+email.substringAfter('.'));
+    String name = email.substringBefore('@');
+    return (name.substringBefore('.')+' '+name.substringAfter('.'));
 }
