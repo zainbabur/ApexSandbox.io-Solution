@@ -1,24 +1,16 @@
 public Boolean isPrime(Integer num) {
     //code here
 
-    if ( math.mod(num, 2) == 0 ) {
+    for ( Integer index = 3; index <= num/2; index++ ) {
 
-        return False;
+        if ( math.mod(num, index) == 0 ) {
 
-    } else {
-
-        for ( Integer index = 3; index <= num/2; index++ ) {
-
-            if ( math.mod(num, index) == 0 ) {
-
-                return False;
-
-            }
+            return False;
 
         }
 
-        return True;
-
     }
+
+    return True;
 
 }
