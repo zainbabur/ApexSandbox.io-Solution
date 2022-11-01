@@ -1,0 +1,29 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    //code here
+    	set<String> set_of_moves = new set<String>{player1, player2};
+    	map<String, Integer> map_of_moves_with_players = new map<String, Integer>{player1 => 1, player2 => 2};
+
+    	//if set contains 1 element, that means both were same hence a draw	
+    	if (set_of_moves.size() == 1) {
+
+        	return 0;
+
+    	} else if (set_of_moves.containsAll(new list<String>{'rock', 'scissors'})) {
+
+        	return map_of_moves_with_players.get('rock');
+
+    	} else if (set_of_moves.containsAll(new list<String>{'rock', 'paper'})) {
+
+        	return map_of_moves_with_players.get('paper');
+
+    	} else if (set_of_moves.containsAll(new list<String>{'scissors', 'paper'})) {
+
+        	return map_of_moves_with_players.get('scissors');
+
+        } else {
+            
+            return 3;
+            
+        }
+
+}
