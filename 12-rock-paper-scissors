@@ -22,6 +22,7 @@ public Integer rockPaperScissors(String player1, String player2) {
 
         } else {
             
+            //just to complete the function
             return 3;
             
         }
