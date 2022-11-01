@@ -1,5 +1,9 @@
 public String nameFromEmail(String email) {
     //code here
+
+    //getting the string before '@' and making it lowercase in case it is in all caps
     String name = email.substringBefore('@').toLowerCase();
+
+    //Capitalize will make the first letter of string capital
     return (name.substringBefore('.').capitalize()+' '+name.substringAfter('.').capitalize());
 }
