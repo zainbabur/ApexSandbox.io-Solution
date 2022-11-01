@@ -1,11 +1,12 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
     Boolean isCompanion = False;
-    list<list<String>> list_of_lists_of_companion_plants = new list<list<String>>{{'lettuce','cucumbers'},{'lettuce','onions'},{'onions','carrots'},{'onions','tomatoes'}};
+    set<set<String>> set_of_sets_of_companion_plants = new set<set<String>>{new set<String>{'lettuce','cucumbers'},new set<String>{'lettuce','onions'},new set<String>{'onions','carrots'},new set<String>{'onions','tomatoes'}};
+    list<String> list_of_plants = new list<String>{plant1, plant2};
 
-    for ( list_of_companion_plants : list_of_lists_of_companion_plants ) {
+    for ( set_of_companion_plants : set_of_sets_of_companion_plants ) {
 
-        if ( list_of_companion_plants.contains(plant1) & list_of_companion_plants(plant2) ) {
+        if ( set_of_companion_plants.containsAll( list_of_plants )) {
 
             isCompanion = True;
             break;
