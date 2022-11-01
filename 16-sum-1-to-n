@@ -4,7 +4,7 @@ public Integer sumToN(Integer n) {
 
     for ( Integer index = 1; index <= n; index++ ) {
 
-        sum+=0;
+        sum+=index;
 
     }
 
