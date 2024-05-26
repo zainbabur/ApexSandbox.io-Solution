@@ -1,6 +1,6 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    if ( credits < 5 AND credits > 0 ) {
+    if ( credits < 5 && credits > 0 ) {
         apxio__Course__c course = new apxio__Course__c(
             Name = name,
             apxio__Course_Details__c = details,
