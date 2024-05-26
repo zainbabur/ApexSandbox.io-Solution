@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
     }
     for ( Account account : accounts ) {
 
-        if ( String.isBlank(account.hasBillingCity) ) {
+        if ( String.isBlank(account.BillingCity) ) {
 
             throw new AccountException('Invalid BillingCity');
 
