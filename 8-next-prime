@@ -6,7 +6,7 @@ public Integer nextPrime(Integer num) {
 
         isPrime = False;
         
-        for (Integer j = 2; j <= Math.Ceil(Decimal.valueOf(i)/2); j++) {
+        for (Integer j = 2; j <= Math.Ceil(i/2); j++) {
 
             if ( math.mod(i,j) == 0 ) {
 
