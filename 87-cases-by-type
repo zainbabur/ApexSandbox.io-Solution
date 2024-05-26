@@ -13,7 +13,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
 
             } else {
 
-                mapOfTypeToListOfCases(thisCase.Type, new List<Case>{thisCase});
+                mapOfTypeToListOfCases.put(thisCase.Type, new List<Case>{thisCase});
 
             }
 
