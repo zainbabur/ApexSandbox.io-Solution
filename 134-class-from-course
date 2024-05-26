@@ -1,9 +1,9 @@
 public Id classFromCourse(String courseName) {
     // code here
-    List<apxio__Course__c> listOfCourse = [SELECT Id, Name FROM apxio__Course__c WHERE Name =:courseName LIMIT 1];
-    if ( listOfCourse.size() > 0 ) {
+    apxio__Course__c thisCourse = [SELECT Id, Name FROM apxio__Course__c WHERE Name =:courseName LIMIT 1];
+    if ( thisCourse != null ) {
         apxio__Class__c newClass = new apxio__Class__c(
-            apxio__Course__c = courseId,
+            apxio__Course__c = thisCourse.Id,
             Name = courseName
         );
         insert newClass;
