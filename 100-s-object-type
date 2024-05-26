@@ -1,5 +1,6 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
-    return record.getSObjectType().getDescribe().getName() == 'Account' ? true : false;
+    return record instanceof Account;
+    //return record.getSObjectType().getDescribe().getName() == 'Account' ? true : false;
 }
