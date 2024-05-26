@@ -1,7 +1,8 @@
 public Id classFromCourse(String courseName) {
     // code here
     Id courseId = [SELECT Id, Name FROM apxio__Course__c WHERE Name =:courseName LIMIT 1].Id;
-    insert new apxio__Class__c(
+    return insert new apxio__Class__c(
         apxio__Course__c = courseId
-    );
+    ).Id;
+    
 }
