@@ -1,7 +1,7 @@
 public void enrollStudents(List<String> emails, String className) {
     // code here
-    List<apxio__Student__c> listOfStudents = [SELECT Id FROM apxio__Student__c WHERE apxio__Email__c IN :emails];
-    Id classId = [SELECT Id FROM apxio__Class__c WHERE Name = className].Id;
+    List<apxio__Student__c> listOfStudents = [SELECT Id, apxio__Email__c FROM apxio__Student__c WHERE apxio__Email__c IN :emails];
+    Id classId = [SELECT Id, Name FROM apxio__Class__c WHERE Name = className].Id;
 
     List<apxio__Class_Enrollment__c> listOfEnrollments = new List<apxio__Class_Enrollment__c>();
 
