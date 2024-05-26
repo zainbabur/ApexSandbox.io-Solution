@@ -1,0 +1,16 @@
+public Map<String, String> phonebook(List<Contact> contacts) {
+    //code here
+    Map<String, String> mapOfContactNamesAndPhone = new Map<String, String>();
+
+    for ( Contact thisContact : contacts ) {
+
+        if ( !thisContact.Phone.isBlank() ) {
+
+            mapOfContactNamesAndPhone.put( thisContact.Name, thisContact.Phone );
+
+        }
+
+    }
+
+    return mapOfContactNamesAndPhone;
+}
