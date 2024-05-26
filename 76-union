@@ -1,4 +1,5 @@
 public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
     //code here
-    return set1.addAll(set2);
+    set1.addAll(set2);
+    return set1;
 }
