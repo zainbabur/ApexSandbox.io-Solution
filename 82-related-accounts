@@ -1,6 +1,6 @@
 public Set<Id> accountIds(List<Opportunity> opps) {
     //code here
-    Set<String> setOfAccountIds = new Set<String>();
+    Set<Id> setOfAccountIds = new Set<Id>();
     for ( Opportunity thisOpp : opps ) {
 
         setOfAccountIds.add(thisOpp.AccountId);
