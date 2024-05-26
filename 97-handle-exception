@@ -1,0 +1,12 @@
+public String divide(Integer a, Integer b){
+    //code here
+    try {
+
+        return a/b;
+
+    } catch Exception exp {
+
+        return exp.getMessage();
+
+    }
+}
