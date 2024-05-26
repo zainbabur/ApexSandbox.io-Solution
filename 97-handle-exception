@@ -4,7 +4,7 @@ public String divide(Integer a, Integer b){
 
         return String.valueOf(a/b);
 
-    } catch Exception exp {
+    } catch(Exception exp) {
 
         return exp.getMessage();
 
