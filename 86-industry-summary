@@ -1,0 +1,21 @@
+public Map<String, Decimal> industrySummary(List<Account> accounts) {
+    //code here
+    Map<String, Integer> mapOfIndustryToAnnualRevenue = new Map<String, Integer>();
+
+    for ( Account thisAccount : accounts ) {
+
+        if ( mapOfIndustryToAnnualRevenue.containsKey(thisAccount.Industry) ) {
+
+            mapOfIndustryToAnnualRevenue.put(thisAccount.Industry, mapOfIndustryToAnnualRevenue.get(thisAccount.Industry)+thisAccount.AnnualRevenue);
+
+        } else {
+
+            mapOfIndustryToAnnualRevenue.put(thisAccount.Industry, thisAccount.AnnualRevenue);
+
+        }
+
+    }
+
+    return mapOfIndustryToAnnualRevenue;
+
+}
