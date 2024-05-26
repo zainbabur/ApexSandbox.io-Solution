@@ -1,0 +1,24 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{
+    // code here
+    
+    if ( accounts.size() == 0 ) {
+
+        throw new IllegalArgumentException('accounts should not be null');
+
+    }
+    for ( Account account : accounts ) {
+
+        if ( String.isBlank(account.hasBillingCity) ) {
+
+            throw new AccountException('Invalid BillingCity');
+
+        }
+
+    }
+
+    return accounts;
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
