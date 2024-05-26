@@ -1,0 +1,24 @@
+public Integer fibonacci(Integer n) {
+    //code here
+
+    Integer curr = 1;
+    Integer prev = 0;
+    Integer saveCurr; //to save current value
+
+    if ( n == 1 ) {
+
+        return curr;
+
+    }
+
+    for ( Integer index = 2; index <= n; index++) {
+
+        saveCurr = curr;
+        curr += prev;
+        prev = saveCurr;
+
+    }
+
+    return curr;
+
+}
