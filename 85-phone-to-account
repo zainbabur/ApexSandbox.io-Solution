@@ -4,7 +4,7 @@ public Map<String, Account> phoneToAccount(List<Account> accounts) {
 
     for ( Account thisAccount : accounts ) {
 
-        if ( String.isBlank(thisAccount.Phone) ) {
+        if ( !String.isBlank(thisAccount.Phone) ) {
 
             mapOfPhoneToAccount.put( thisAccount.Phone, thisAccount );
 
