@@ -6,4 +6,6 @@ public Map<String,String> getContextUserInformation(){
     result.put('Type', UserInfo.getUserType());
     result.put('EmailId', UserInfo.getUserEmail());
 
+    return result;
+
 }
