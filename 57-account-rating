@@ -1,0 +1,18 @@
+public void setAccountRating(Account a) {
+    //code here
+    switch on a.AnnualRevenue {
+
+        when <=100000 {
+
+            a.Rating = 'Cold';
+
+        } when <=500000 {
+
+            a.rating = 'Warm'
+
+        }
+
+
+    }
+    
+}
